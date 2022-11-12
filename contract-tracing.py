@@ -29,18 +29,22 @@ while True:
         }
         contact[name]=contactInfo
         print("Saved!")
+        print("=================================")
 
     if userInput == 2:
         fullname = input("Fullname: ")
-        x = contact[fullname]
-        for keys,value in x:
-            print(keys,value)
+        userAge = contact[fullname]["Age"]
+        userAdd = contact[fullname]["Address"]
+        userNum = contact[fullname]["Phone number"]
+        print(f"""Age: {userAge}
+Address: {userAdd}
+Phone number: {userNum}
+=================================""")
 
-
-    if userInput == 3:
-        answer = input("Exit? ")
-        if answer == "y":
-            break
+    # if userInput == 3:
+    #     answer = input("Exit? ")
+    #     if answer == "y":
+    #         break
 
 
 #perform the selected option
