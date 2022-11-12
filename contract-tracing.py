@@ -12,24 +12,35 @@ print("""
 =================================""")
 
 #ask for an input from the user to choose from the options
-while True:
-    contactInfo = {}
-    name = input("Full name: ")
-    age = input("Age: ")
-    address = input("Address: ")
-    phoneNum = input("Phone number: ")
 
-    contactInf = {
-        "Name": name,
-        "Age": age,
-        "Address": address,
-        "Phone number": phoneNum
-    }
+userInput = int(input("What do you want to do? "))
+if userInput == 1:
+    print("add an item")
+if userInput == 2:
+    print("search")
+if userInput == 3:
+    print("exit")
 
-    contactInfo[name] = contactInf
-    deets = contactInfo
-    contactInfo.update(deets)
-    print(contactInfo)
+
+
+
+# while True:
+#     contactInfo = {}
+#     name = input("Full name: ")
+#     age = input("Age: ")
+#     address = input("Address: ")
+#     phoneNum = input("Phone number: ")
+
+#     contactInf = {
+#         "Name": name,
+#         "Age": age,
+#         "Address": address,
+#         "Phone number": phoneNum
+#     }
+
+#     if name not in contactInfo.keys():
+#         contactInfo[name] = contactInf
+#     print(contactInfo)
 
 
 
