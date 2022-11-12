@@ -13,34 +13,61 @@ print("""
 
 #ask for an input from the user to choose from the options
 
-userInput = int(input("What do you want to do? "))
-if userInput == 1:
-    print("add an item")
-if userInput == 2:
-    print("search")
-if userInput == 3:
-    print("exit")
+contact = {}
+while True:
+    userInput = int(input("What do you want to do? "))
+    if userInput == 1:
+        name = input("Full name: ")
+        age = input("Age: ")
+        address = input("Address: ")
+        phoneNum = input("Phone number: ")
+        contactInfo = {
+            "Name": name,
+            "Age": age,
+            "Address": address,
+            "Phone number": phoneNum
+        }
+        contact[name]=contactInfo
+        print("Saved!")
+
+    if userInput == 2:
+        fullname = input("Fullname: ")
+        x = contact[fullname]
+        for keys,value in x:
+            print(keys,value)
 
 
+    if userInput == 3:
+        answer = input("Exit? ")
+        if answer == "y":
+            break
 
 
+#perform the selected option
+
+# contact = {}
 # while True:
-#     contactInfo = {}
 #     name = input("Full name: ")
 #     age = input("Age: ")
 #     address = input("Address: ")
 #     phoneNum = input("Phone number: ")
 
-#     contactInf = {
+#     contactInfo = {
 #         "Name": name,
 #         "Age": age,
 #         "Address": address,
 #         "Phone number": phoneNum
 #     }
 
-#     if name not in contactInfo.keys():
-#         contactInfo[name] = contactInf
-#     print(contactInfo)
+#     contact[name]=contactInfo
+#     print(contact)
+
+    # contact[name] = contactInfo
+    # print(contact)
+
+
+
+
 
 
 
