@@ -10,5 +10,46 @@ print("""
         3 -> Exit (y/n)
 
 =================================""")
-#allow user to choose from the menu
+
+#ask for an input from the user to choose from the options
+while True:
+    contactInfo = {}
+    name = input("Full name: ")
+    age = input("Age: ")
+    address = input("Address: ")
+    phoneNum = input("Phone number: ")
+
+    contactInf = {
+        "Name": name,
+        "Age": age,
+        "Address": address,
+        "Phone number": phoneNum
+    }
+
+    contactInfo[name] = contactInf
+    deets = contactInfo
+    contactInfo.update(deets)
+    print(contactInfo)
+
+
+
+# userInput = int(input("What do you want to do? "))
+# if userInput == 1:
+#     name = input("Full name: ")
+#     age = input("Age: ")
+#     address = input("Address: ")
+#     phoneNum = input("Phone number: ")
+#     contactInfo = {
+#         "Name": name,
+#         "Age": age,
+#         "Address": address,
+#         "Phone number": phoneNum
+#     }
+#     print(contactInfo)  
+
+
+
+
+
+
 #perform the selected option
